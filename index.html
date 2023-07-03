@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-xl fixed-top">
+      <container class="container-fluid">
+        <a href="#home" class="navbar-brand ml-3">Ronaldo de Pao</a>
+        <button
+          class="navbar-toggler custom"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon custom"></span>
+        </button>
+
+        <div class="collapse navbar-collapse mr-5" id="navbarSupportedContent">
+          <ul class="navbar-nav pagination">
+            <li class="nav-item active+">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link CTA" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </container>
+    </nav>
+    <!-- END OF NAV -->
+
+    <!-- HERO -->
+    <div class="parent" id="home">
+      <section class="hidden">
+        <div class="container-fluid-1">
+          <div class="hero">
+            <p class="hello fade-1">Hi, my name is</p>
+            <h1 class="name fade-2">Ronaldo de Pao.</h1>
+            <h3 class="role fade-3">Full Stack Developer.</h3>
+            <a href="#projects">
+              <button class="projects-btn view-proj fade-4">
+                View my projects
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- END OF HERO -->
+      <!-- ABOUT -->
+      <div id="about"></div>
+      <section class="hidden">
+        <div class="container-fluid-3">
+          <h1 class="heading">About</h1>
+          <p class="about-text hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorem
+            incidunt nesciunt nulla harum necessitatibus optio. Nobis corrupti
+            commodi assumenda aperiam ea fugiat eaque quasi provident distinctio
+            repudiandae molestias, tempore placeat laborum. Obcaecati sapiente
+            quidem ducimus, vitae animi veniam cumque voluptatum tenetur ut
+            exercitationem enim, dolorum accusantium dolores alias magnam autem
+            delectus unde aliquid fuga et placeat facere reiciendis. Sed vitae
+            ratione sint necessitatibus dolor repellat pariatur odio! Repellat
+            veritatis necessitatibus numquam labore, ducimus beatae optio facere
+            soluta blanditiis nihil?
+          </p>
+          <div class="technologies hidden">
+            <h1 class="small-heading">Technologies</h1>
+            <div class="tech-images hidden">
+              <div class="img-text">
+                <img src="images/javascript.png" alt="javascript" />
+                <p>JavaScript</p>
+              </div>
+              <div class="img-text">
+                <img src="images/css.svg.png" alt="css" />
+                <p>CSS</p>
+              </div>
+              <div class="img-text">
+                <img src="images/bootstrap.svg" alt="bootstrap" />
+                <p>Bootstrap</p>
+              </div>
+              <div class="img-text">
+                <img id="react-img" src="images/react.svg.png" alt="react" />
+                <p>React</p>
+              </div>
+              <div class="img-text">
+                <img id="node-img" src="images/nodejs.png" alt="nodejs" />
+                <p>NodeJS</p>
+              </div>
+              <div class="img-text">
+                <img src="images/expressjs.png" alt="expressjs" />
+                <p>Express</p>
+              </div>
+              <div class="img-text">
+                <img src="images/mongodb.svg" alt="mongoDB" />
+                <p>MongoDB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END OF ABOUT -->
+
+      <!-- PROJECTS -->
+      <div id="projects"></div>
+      <section>
+        <div class="container-fluid-2">
+          <h1 class="heading hidden">Projects</h1>
+          <div class="project-card">
+            <div class="project-info">
+              <h3 class="project-name">React Hangman</h3>
+              <img src="images/hangman.png" alt="React Hangman" class="project-img-small">
+              <p class="project-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo molestias facilis iure? Nisi dolores optio minus, labore, possimus earum laborum impedit eveniet dignissimos exercitationem nemo odio commodi corporis sint a molestias illo aliquid? Debitis nisi nihil dolor. Reprehenderit, alias sit?</p>
+              <button class="project-cta">See live</button>
+              <button class="project-secondary">View code</button>
+            </div>
+          <div class="project-img">
+            <img class="project-1-img" src="images/hangman.png" alt="React hangman game">
+          </div>
+        </div>
+            </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- END OF PROJECTS -->
+    <!-- CONTACT FORM-->
+  </body>
+  <script></script>
+</html>
