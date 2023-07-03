@@ -54,19 +54,6 @@ nav a:hover {
   border-bottom: 2px solid rgb(49, 49, 49);
 }
 
-.CTA {
-  background-color: #003566;
-  color: white;
-  border-radius: 5px;
-  padding: 6px 14px !important;
-}
-
-.CTA:hover {
-  background-color: #1560a5;
-  color: black;
-  border-bottom: none;
-}
-
 /* END OF NAV */
 
 .fade-1 {
