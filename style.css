@@ -195,11 +195,12 @@ nav a:hover {
 }
 
 .project-card {
+  width: 80%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2em;
+  padding: 2% 0;
   background-color: #003566;
   border-radius: 10px;
 }
@@ -232,7 +233,7 @@ nav a:hover {
 }
 
 .project-1-img {
-  width: 100%;
+  width: 90%;
 }
 
 .project-cta {
@@ -259,6 +260,10 @@ nav a:hover {
   display: none;
 }
 
+.flex-btns {
+  display: flex;
+}
+
 @media screen and (max-width: 1579px) {
   .project-card {
     justify-content: center;
@@ -267,7 +272,7 @@ nav a:hover {
   .project-info {
     width: 100%;
   }
-  .project-info :is(h3, p) {
+  .project-info h3 {
     margin: 1em auto;
     width: 90%;
     text-align: center;
@@ -279,9 +284,19 @@ nav a:hover {
   .project-img-small {
     display: block;
     width: 100%;
+    margin-bottom: 2em;
   }
   .project-1-img {
     display: none;
+  }
+  .flex-btns {
+    justify-content: center;
+  }
+  .project-cta {
+    margin-right: 1em;
+  }
+  .project-secondary {
+    margin-left: 1em;
   }
 }
 /* HANGMAN PAGE */
@@ -385,6 +400,21 @@ nav a:hover {
     height: 53x;
     width: 50px !important;
   }
+  .project-card {
+    width: 85% !important;
+  }
+  .project-text {
+    font-size: 16px;
+  }
+  .project-cta {
+    font-size: 14px;
+  }
+  .project-secondary {
+    font-size: 14px;
+  }
+  .project-info {
+    padding: 1em !important;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -394,12 +424,6 @@ nav a:hover {
   }
   .container-fluid-3 {
     height: fit-content;
-  }
-  .card-1,
-  .card-2,
-  .card-3 {
-    width: 90%;
-    margin: 3em auto 0 auto;
   }
   .project-images {
     width: 100%;
@@ -430,5 +454,18 @@ nav a:hover {
   }
   .flex-buttons {
     margin-bottom: 0;
+  }
+  .project-card {
+    width: 80%;
+  }
+  .project-info {
+    padding: 0 2em;
+  }
+  .project-text {
+    width: 90%;
+    margin: 0 auto 1em auto;
+  }
+  .project-cta {
+    margin: 0;
   }
 }
