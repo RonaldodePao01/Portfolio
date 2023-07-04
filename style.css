@@ -79,7 +79,7 @@ nav a:hover {
 }
 
 .hero {
-  padding-top: 15em !important;
+  padding-top: 20em !important;
   margin: 0 auto;
   line-height: 0 !important;
   width: fit-content;
@@ -130,11 +130,13 @@ nav a:hover {
 }
 
 .about-text {
+  letter-spacing: 0.5px;
+  line-height: 1.5;
   font-size: 18px;
   width: 70%;
-  max-width: 75ch;
+  max-width: 90ch;
   margin: 0 auto;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .small-heading {
@@ -152,7 +154,7 @@ nav a:hover {
 
 .tech-images {
   margin: 0 auto;
-  width: 70%;
+  width: 60%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -195,14 +197,14 @@ nav a:hover {
 }
 
 .project-card {
-  width: 80%;
-  margin: 0 auto;
+  width: 60%;
+  margin: 0 auto 4em auto;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2% 0;
+  padding: 1% 0;
   background-color: #003566;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .project-info {
@@ -210,24 +212,23 @@ nav a:hover {
   border-bottom-left-radius: 10px;
   color: white;
   width: 50%;
-  padding: 5em;
+  padding: 1em 3em;
 }
 
 .project-name {
   font-weight: 600;
   font-size: 2.2em;
-  margin-bottom: 1em;
+  margin-bottom: 0.7em;
 }
 
 .project-text {
-  font-size: 18px;
   line-height: 1.5;
   margin-bottom: 1.5em;
 }
 
 .project-img {
   width: 50%;
-  padding: 2em;
+  padding: 1em 0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -237,23 +238,25 @@ nav a:hover {
 }
 
 .project-cta {
-  background-color: #bfbfbf;
-  color: black;
+  background-color: black;
+  color: white;
+  letter-spacing: 1px;
   border: none;
   border-radius: 5px;
   padding: 0.3em 1.7em;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
 .project-secondary {
-  background-color: black;
-  color: white;
+  background-color: #bfbfbf;
+  color: black;
+  letter-spacing: 1px;
   border: none;
   border-radius: 5px;
   padding: 0.3em 1.7em;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .project-img-small {
@@ -262,9 +265,10 @@ nav a:hover {
 
 .flex-btns {
   display: flex;
+  gap: 10px;
 }
 
-@media screen and (max-width: 1579px) {
+/* @media screen and (max-width: 1379px) {
   .project-card {
     justify-content: center;
     width: 70%;
@@ -275,10 +279,6 @@ nav a:hover {
   .project-info h3 {
     margin: 1em auto;
     width: 90%;
-    text-align: center;
-  }
-  .project-cta,
-  .project-secondary {
     text-align: center;
   }
   .project-img-small {
@@ -292,35 +292,7 @@ nav a:hover {
   .flex-btns {
     justify-content: center;
   }
-  .project-cta {
-    margin-right: 1em;
-  }
-  .project-secondary {
-    margin-left: 1em;
-  }
-}
-/* HANGMAN PAGE */
-
-.container-fluid {
-  width: 100%;
-}
-
-.large-image {
-  display: flex;
-  margin: 2em auto;
-  width: 50% !important;
-}
-
-.hidden {
-  opacity: 0;
-  transform: translateX(-50%);
-  transition: all 2s;
-}
-
-.show {
-  opacity: 1;
-  transform: translateX(0);
-}
+} */
 
 /* ---------------------MEDIA QUERY-------------------------- */
 @keyframes drop-in {
@@ -378,6 +350,9 @@ nav a:hover {
   }
   .nav-item .active + {
     color: red !important;
+  }
+  .navbar-brand {
+    font-size: 16px;
   }
   .container-fluid-1 {
     height: 97vh;
@@ -452,20 +427,35 @@ nav a:hover {
     width: 70px;
     height: 75px;
   }
-  .flex-buttons {
-    margin-bottom: 0;
+  .project-cta {
+    margin: 0;
   }
   .project-card {
-    width: 80%;
+    justify-content: center;
+    width: 70%;
   }
   .project-info {
+    width: 100%;
     padding: 0 2em;
   }
   .project-text {
     width: 90%;
     margin: 0 auto 1em auto;
   }
-  .project-cta {
-    margin: 0;
+  .project-info h3 {
+    margin: 1em auto;
+    width: 90%;
+    text-align: center;
+  }
+  .project-img-small {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .project-1-img {
+    display: none;
+  }
+  .flex-btns {
+    justify-content: center;
   }
 }
