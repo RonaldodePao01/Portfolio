@@ -186,6 +186,10 @@ nav a:hover {
   padding-top: 0.5em;
 }
 
+#technologies{
+  padding-top: 1em;
+}
+
 .technologies {
   width: 100%;
   margin: 0 auto 8em auto;
@@ -198,7 +202,7 @@ nav a:hover {
   justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: #003566;
-  padding: 2em;
+  padding: 1.5em;
   border-radius: 10px;
 }
 
