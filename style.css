@@ -141,15 +141,16 @@ nav a:hover {
 .projects-btn {
   background-color: #003566;
   color: white;
+  font-size: 18px;
   border-radius: 5px;
   border: none;
-  padding: 0.5em 1em;
+  padding: 0;
   font-weight: 600;
 }
 
 .view-proj {
   margin-top: 1em;
-  padding: 1.4em 1.2em;
+  padding: 1em;
 }
 
 .link-btns{
