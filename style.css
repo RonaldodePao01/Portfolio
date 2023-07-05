@@ -341,6 +341,7 @@ nav a:hover {
   }
   .hero {
     margin-left: 1em;
+    padding-top: 18em !important;
   }
   .hello {
     margin-left: 0.1em;
@@ -362,8 +363,11 @@ nav a:hover {
   .small-heading {
     font-size: 35px;
   }
+  .git-link .fa{
+    font-size: 28px !important;
+  }
   .projects-btn {
-    font-size: 16x;
+    font-size: 16px;
     padding: 1em 1em;
   }
   .git-link{
