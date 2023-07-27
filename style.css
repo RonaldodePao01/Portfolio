@@ -34,8 +34,16 @@ nav {
   font-weight: 600;
 }
 
+.navbar-brand a {
+  margin-left: 0 !important;
+}
+
 .navbar-brand:hover {
   border-bottom: none;
+}
+
+.navbar-expand-xl {
+  background-color: #ffd60a;
 }
 
 nav a {
@@ -54,7 +62,8 @@ nav a:hover {
   border-bottom: 2px solid black;
 }
 
-.nav-item.active , .nav-item.active a {
+.nav-item.active,
+.nav-item.active a {
   color: red;
   font-weight: lighter;
 }
@@ -77,23 +86,22 @@ nav a:hover {
   animation: drop-in 1800ms ease 200ms backwards;
 }
 
-.hidden{
+.hidden {
   opacity: 0;
   transform: translateX(-50%);
   transition: all 1.5s;
 }
 
-.hidden-extra{
+.hidden-extra {
   opacity: 0;
   transform: translateX(-300%);
   transition: all 2s;
 }
 
-.show{
+.show {
   opacity: 1;
   transform: translateX(0);
 }
-
 
 .container-fluid-1 {
   height: 100vh;
@@ -130,7 +138,7 @@ nav a:hover {
   margin-left: 0.32em;
 }
 
-.hero-about{
+.hero-about {
   line-height: 1.5;
   max-width: 75ch;
   margin: 0 auto;
@@ -153,7 +161,7 @@ nav a:hover {
   padding: 1em;
 }
 
-.link-btns{
+.link-btns {
   width: 90%;
   height: fit-content;
   display: flex;
@@ -162,12 +170,12 @@ nav a:hover {
   gap: 1em;
 }
 
-.git-link{
+.git-link {
   display: flex;
   gap: 1.5em;
 }
 
-.fa{
+.fa {
   color: black;
 }
 
@@ -187,7 +195,7 @@ nav a:hover {
   padding-top: 0.5em;
 }
 
-#technologies{
+#technologies {
   padding-top: 1em;
 }
 
@@ -240,7 +248,7 @@ nav a:hover {
   padding-bottom: 5em;
 }
 
-#projects{
+#projects {
   padding-top: 1em;
 }
 
@@ -316,7 +324,6 @@ nav a:hover {
   gap: 10px;
 }
 
-
 /* ---------------------MEDIA QUERY-------------------------- */
 @keyframes drop-in {
   from {
@@ -353,7 +360,7 @@ nav a:hover {
   .role {
     font-size: 30px;
   }
-  .hero-about{
+  .hero-about {
     margin-left: 0.1em;
   }
   .heading {
@@ -363,15 +370,15 @@ nav a:hover {
   .small-heading {
     font-size: 35px;
   }
-  .git-link .fa{
+  .git-link .fa {
     font-size: 28px !important;
   }
   .projects-btn {
     font-size: 16px;
     padding: 1em 1em;
   }
-  .git-link{
-    gap:1em;
+  .git-link {
+    gap: 1em;
   }
   .flex-buttons {
     margin-top: 0.2em;
@@ -422,11 +429,11 @@ nav a:hover {
   .project-info {
     padding: 1em !important;
   }
-  .technologies{
+  .technologies {
     margin-top: 0 !important;
     margin-bottom: 3rem;
   }
-  .container-fluid-2{
+  .container-fluid-2 {
     margin-bottom: 0;
     padding-bottom: 0;
   }
